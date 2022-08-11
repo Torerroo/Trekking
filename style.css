@@ -148,7 +148,7 @@ body {
 
 /* ----------------------------------------------------------------------------------------- */
 
-.main__block-MenClothes {
+.cloth__container {
     font-weight: bold;
     
 }
@@ -157,22 +157,24 @@ body {
     display: flex;
     flex-direction: column;
 }
-    .cloth__container-title {
-        margin-bottom: 45px;
-        height: 2px;
-        background-color: #cccccc; 
-        width: 100%;       
-    }
- 
-    .cloth__container-title::after {
-        content: "MEN";
+    .cloth__container-titleMen {
+        margin-bottom: 45px;      
         position: relative;
-        top: -10px;
-        background-color: white;
-        padding-right: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .titleMen-title {
+        font-weight: bold;
         font-size: 20px;
         color: #424242;
-      
+        background-color: white;
+        z-index: 50;
+        padding-right: 50px;
+    }
+    .titleMen-line {
+        height: 2px;
+        width: 100%;
+        background-color: #cccccc;
     }
     .cloth__container-switch {
         display: grid;
@@ -201,8 +203,7 @@ body {
             height: 378px;
             background-color: #f5f6f7;
             border-radius: 3px;
-            grid-row-gap: 45px;
-            grid-template-rows: minmax(auto, 100px);
+            
             align-items: center;
         }
         .cloth__container-item:first-child{
@@ -210,9 +211,17 @@ body {
         }
             .item__cloth-size { 
                 font-size: 16px;                
-                color: #424242;
-               
-                
+                color: #424242;      
+                text-transform: uppercase;   
+            }
+            .item__cloth-size3 {
+                font-size: 18px;    
+            }
+            .item__cloth-size, .item__cloth-color {
+                align-self: flex-start;
+            }
+            .item__cloth-type, .item__cloth-price {
+                align-self: flex-end;
             }
             .size-button {
                 border: none;
@@ -239,7 +248,6 @@ body {
                 display: block;
             }
             .size_icon-content a:hover {
-                background-color: red;
                 background-color: #e8e9eb;
             }
             .item__cloth-color {
@@ -247,13 +255,13 @@ body {
             }
             .item__cloth-img {
                 grid-column:1/3;
-                justify-self: center;
-                
+                justify-self: center;                
             }
             .item__cloth-type {
                 font-size: 18px;
                 line-height: 1.2;
-                color: #aa9b77;              
+                color: #aa9b77;          
+                text-transform: uppercase;   
             }
             .item__cloth-price {
                 justify-self: right;
@@ -261,3 +269,34 @@ body {
                 color: #424242;        
             }
            
+/* ----------------------------------------------------------------------------------------- */
+            .main__block-WomenClothes .cloth__container-item:first-child{
+                border: none;
+            }
+            .main__block-WomenClothes .cloth__container-switch {
+                justify-content: left;
+            }
+            .cloth__container-titleWomen {
+                margin-bottom: 45px;      
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                
+
+            }
+            .titleWomen-title {
+                font-weight: bold;
+                font-size: 20px;
+                color: #424242;
+                background-color: white;
+                z-index: 50;
+                padding-left: 50px;
+
+            }
+            .titleWomen-line {
+                height: 2px;
+                width: 100%;
+                background-color: #cccccc;
+            }
+/* ----------------------------------------------------------------------------------------- */
