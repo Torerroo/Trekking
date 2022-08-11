@@ -147,7 +147,6 @@ body {
             }
 
 /* ----------------------------------------------------------------------------------------- */
-
 .cloth__container {
     font-weight: bold;
     
@@ -282,8 +281,6 @@ body {
                 display: flex;
                 align-items: center;
                 flex-direction: row-reverse;
-                
-
             }
             .titleWomen-title {
                 font-weight: bold;
@@ -300,3 +297,40 @@ body {
                 background-color: #cccccc;
             }
 /* ----------------------------------------------------------------------------------------- */
+
+.main__block-AboutUS {
+    margin-top: 40px;
+    height: 402px;
+    background-color: #aa9b77;
+    position: relative;
+    display: flex;
+    padding: 0 15px;
+    font-weight: bold;
+    
+    
+}
+.aboutUS__item {
+    width: 720px;
+    height: 250px;
+    border: 2px solid #918363;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.aboutUS__item-title {
+    position: absolute;
+    top: 63px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #837659;
+    background-color: #aa9b77;
+    padding: 0 10px;
+
+}
+.aboutUS__item-text {
+    align-self: center;
+    text-align: center;    
+    font-size: 16px;
+    line-height: 24px;
+    color: #424242;
+}
